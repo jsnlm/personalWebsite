@@ -1,0 +1,72 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\000031}}
+.fontSize1 {
+  font-size: 500%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\000034}}
+.fontSize2 {
+  font-size: 300%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\000037}}
+.fontSize3 {
+  font-size: 200%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000311}}
+body, html {
+  font-family: "Lato","Open Sans",sans-serif;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000317}}
+.header {
+  background-color: rgba(100, 100, 100, 0.85);
+  color: #444;
+  height: 70px;
+  position: fixed;
+  z-index: 10;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000324}}
+  .header .items {
+    vertical-align: middle;
+    height: 100%;
+    width: 70px;
+    float: right;
+    padding: 0 10px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000332}}
+    .header .items .icon {
+      font-size: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000335}}
+    .header .items .text {
+      line-height: 30px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000341}}
+.content {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000345}}
+.pictureSection {
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000354}}
+  .pictureSection.pic1 {
+    background-image: url("images/fjord-mountain-valley-river-tree-nature-1920x1080-wallpaper57568.jpg");
+    background-position: center center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000360}}
+  .pictureSection .content {
+    position: relative;
+    top: 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000368}}
+#projects {
+  padding: 0 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000370}}
+  #projects .project {
+    height: 470px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003101}}
+.clearBoth {
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */

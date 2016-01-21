@@ -1,0 +1,103 @@
+.fontSize1{
+  font-size:500%;
+}
+.fontSize2{
+  font-size:300%;
+}
+.fontSize3{
+  font-size:200%;
+}
+
+body, html{
+  font-family:"Lato","Open Sans",sans-serif;
+  margin:0;
+  padding: 0;
+}
+
+.header{
+  background-color: rgba(100,100,100,0.85);
+  color:#444;
+  height:70px;
+  position:fixed;
+  z-index:10;
+  width:100%;
+  .items{
+    // position:absolute;
+    vertical-align:middle;
+    height:100%;
+    width:70px;
+    float:right;
+    padding:0 10px;
+    text-align:center;
+    .icon{
+      font-size:30px;
+    }
+    .text{
+      line-height:30px;
+    }
+  }
+}
+
+.content{
+  text-align:center;
+}
+
+.pictureSection{
+  height:700px;
+  background-repeat:no-repeat;
+  background-position:center center;
+  // background-attachment:fixed;
+  // background-size:contain;
+  // background-size:cover;
+  width:100%;
+
+  &.pic1{
+    // background-image:url("images/Mountains-Wallpaper-Good-E8O2.jpg");
+    background-image:url("images/fjord-mountain-valley-river-tree-nature-1920x1080-wallpaper57568.jpg");
+    background-position:center center;
+    // background-size: 80px 60px;
+  }
+  .content{
+    position:relative;
+    top:50%;
+  }
+}
+
+$projectWidth: 300px;
+
+#projects{
+  padding:0 40px;
+  .project{
+    height:470px;
+  // background-color:#AAF;
+
+
+  // margin:20px 20px;
+  // width: $projectWidth;
+  // float:left;
+
+  .squarePicture{
+    // width: $projectWidth;
+    // height: $projectWidth/2;
+    &.project1{
+      // background-image: url("images/12596408_10205940461771533_804017030_n.jpg");
+      // background-position:-150px -334px;
+    }
+    &.project2{
+      // background-image: url("images/pandaSportswareWebsiteScreenShot.png");
+      // background-size:$projectWidth;
+      // background-position-x:-150px;
+      // background-position-y:-150px;
+    }
+  }
+  .description{
+
+  }
+}
+}
+
+
+
+.clearBoth{
+  clear:both;
+}
