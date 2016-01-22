@@ -15,6 +15,10 @@ body, html{
 }
 
 .majorSection{
+  .title{
+    font-size:300%;
+    font-weight:700;
+  }
   padding-top:80px;
 }
 
@@ -67,14 +71,15 @@ $headerColor: rgba(100,100,100,0.85);
   }
   .content{
     position:relative;
-    top:50%;
+    top:25%;
   }
 }
 
 $projectWidth: 300px;
 
 #projects{
-  padding:0 40px;
+  padding-left:40px;
+  padding-right:40px;
   .project{
     height:470px;
   // background-color:#AAF;
@@ -105,15 +110,39 @@ $projectWidth: 300px;
 }
 
 #Experience{
-  .jobTitle{
-    font-size:150%
-  }
-  // .company
-  // .date
-  // .point
-  // ul
-  // li
-  
+  .job{
+    padding-right:20px;
+    padding-left:20px;
+    >div{
+      background-color:#bbb;
+      border-width:6px;
+      border-color:#DDD;
+      border-style:solid;
+    }
+    .jobTitle{
+      font-size:200%;
+      height:72px;
+    }
+    .company{
+      font-size:120%;
+    }
+    .date{
+      font-size:70%;
+      font-weight:500;
+    }
+    .project{
+      font-weight:800;
+    }
+    .point{
+    }
+    ul{
+      text-align:left;
+    }
+    li{
+      padding-bottom:5px;
+      padding-top:5px;
+    }
+  }  
 }
 #ContactMe{
   margin:auto;
