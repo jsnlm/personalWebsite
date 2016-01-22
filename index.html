@@ -8,6 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="scripts/downloadedScripts/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
 <script src="scripts/script.js"></script>
 </head>
 <body>
@@ -16,9 +17,10 @@
 		<!-- <div class="items">github<img class="icon" src="css/images/github-512.png" alt=""></div> -->
 		<table style="width:100%">
 		  <tr>
-		    <span class="items"><div class="text">Github</div><i class="icon fa fa-github "></i></span>
-		    <span class="items"><div class="text">Email</div><i class="icon fa fa-envelope-o "></i></span>
-		    <span class="items"><div class="text">R&eacute;sum&eacute;</div><i class="icon fa fa-file-text-o "></i></span>
+		    <span class="items projects"><div class="text">Projects</div><i class="icon fa fa-cogs"></i></span>
+		    <span class="items experience"><div class="text">Experience</div><i class="icon fa fa-male"></i></span>
+		    <span class="items contactMe"><div class="text">Contact Me</div><i class="icon fa fa-compress"></i></span>
+		    <span class="items resume"><div class="text">R&eacute;sum&eacute;</div><i class="icon fa fa-file-text-o "></i></span>
 		  </tr>
 		</table>
 	</div>
@@ -27,12 +29,11 @@
 	<div class="pictureSection pic1" >
 		<div class="content">
 			<div class="fontSize1">Jason Lam</div>
-			<div class="fontSize3">Developer</div>
-			Worked at IBM, BDO, Theredpin
+			<div class="fontSize3">Developer </br>Worked at IBM, BDO, Theredpin</div>
 		</div>
 	</div>
 
-	<div id="projects" class="content">
+	<div id="projects" class="majorSection content">
 		<div class="fontSize3">Projects</div>
 		<div class="row">
 
@@ -46,7 +47,7 @@ for different effects and change the app's performance</div>
 			</div>
 
 			<div class="project col-md-4 col-sm-4">
-				<div class="fontSize3">Panda Sportswear eCommerce Website </div>
+				<div class="fontSize3">Panda Sportswear eCommerce</div>
 				<!-- <div class="squarePicture project2"></div> -->
 				<img class="img1" src="css/images/pandaSportswareWebsiteScreenShot2.png" width="100%">
 				<div class="description">A fully functional eCommerce site for Panda Sportswear; separates products into
@@ -78,11 +79,11 @@ hour hackathon</div>
 
 	</div>
 
-	<div id="Experience" class="content">
+	<div id="Experience" class="majorSection content">
 		<div class="fontSize3">Experience</div>
 		<div class="col-md-4 col-sm-4 job">
-			<div>.NET Developer</div>
-			<div>BDO<span>Jan - Apr, 2015</span></div>
+			<div class="jobTitle">.NET Developer</div>
+			<div class="company">BDO<span class="date">Jan - Apr, 2015</span></div>
 			<div class="project">POWER Vector Intrinsic Library<span></span></div>
 			<ul>
 				<li class="point">Strengthened and simplified the testing process by refactoring the testing framework, and writing several scripts. This had the added benefit of catching many bugs in the library</li>
@@ -91,8 +92,8 @@ hour hackathon</div>
 			</ul>
 		</div>
 		<div class="col-md-4 col-sm-4 job">
-			<div>Compiler Optimization Developer</div>
-			<div>IBM Canada<span>Sept-Dec, 2015</span></div>
+			<div class="jobTitle">Compiler Optimization Developer</div>
+			<div class="company">IBM Canada<span class="date">Sept-Dec, 2015</span></div>
 			<div class="project">Bell Invoice Redesign Project</div>
 			<ul >
 				<li class="point">Owned <!--the front-end of -->Bell's new Bill Comparison page. Created a graphical app to display charges and also dynamically load additional data</li>
@@ -106,8 +107,8 @@ hour hackathon</div>
 		</div>
 
 		<div class="col-md-4 col-sm-4 job">
-			<div>Compiler Optimization Developer</div>
-			<div>IBM Canada<span>Sept-Dec, 2015</span></div>
+			<div class="jobTitle">Compiler Optimization Developer</div>
+			<div class="company">IBM Canada<span class="date">Sept-Dec, 2015</span></div>
 			<div class="project">Bell Invoice Redesign Project</div>
 			<ul >
 				<li class="point">Contributed to the UI development of multiple SEM sites including:</li>
@@ -120,12 +121,29 @@ hour hackathon</div>
 
 	</div>
 
-	<div id="Experience" class="content">
+	<div id="ContactMe" class="majorSection content">
 		<div class="fontSize3">Contact Me</div>
-		Github<i class="icon fa fa-github "></i>
-    Email<i class="icon fa fa-envelope-o "></i>
-    R&eacute;sum&eacute;<i class="icon fa fa-file-text-o "></i>
+
+		<div class="item">
+			<div class="content">
+				<i class="icon fa fa-github "></i></br>Github
+			</div>
+		</div>
+    <div class="item">
+    	<div class="content">
+    		<i class="icon fa fa-envelope-o "></i></br>Email
+    	</div>
+    </div>
+    <div class="item">
+    	<div class="content">
+    		&nbsp;
+    		<i class="icon fa fa-file-text-o "></i></br>R&eacute;sum&eacute;
+    	</div>
+    </div>
+    <div class="clearBoth"></div>
 	</div>
+
+	<div id="Footer" class="content"> &nbsp; </div>
 
 </body>
 </html>

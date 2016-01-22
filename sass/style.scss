@@ -1,5 +1,5 @@
 .fontSize1{
-  font-size:500%;
+  font-size:700%;
 }
 .fontSize2{
   font-size:300%;
@@ -14,23 +14,31 @@ body, html{
   padding: 0;
 }
 
+.majorSection{
+  padding-top:80px;
+}
+
+$headerColor: rgba(100,100,100,0.85);
 .header{
-  background-color: rgba(100,100,100,0.85);
+  background-color: $headerColor;
   color:#DDD;
   height:70px;
   position:fixed;
-  z-index:10;
+  z-index:1;
   width:100%;
   .items{
     // position:absolute;
     vertical-align:middle;
     height:100%;
-    width:70px;
+    width:95px;
     float:right;
     padding:0 10px;
     text-align:center;
     .icon{
       font-size:30px;
+    }
+    &.hover{
+      background-color: rgba(150, 150, 150, 0.85);
     }
     .text{
       line-height:30px;
@@ -50,7 +58,7 @@ body, html{
   // background-size:contain;
   // background-size:cover;
   width:100%;
-
+  color:000;
   &.pic1{
     // background-image:url("images/Mountains-Wallpaper-Good-E8O2.jpg");
     background-image:url("images/fjord-mountain-valley-river-tree-nature-1920x1080-wallpaper57568.jpg");
@@ -97,9 +105,43 @@ $projectWidth: 300px;
 }
 
 #Experience{
+  .jobTitle{
+    font-size:150%
+  }
+  // .company
+  // .date
+  // .point
+  // ul
+  // li
+  
+}
+#ContactMe{
+  margin:auto;
+  max-width:700px;
+  padding-bottom:150px;
+  .item{
+    width:33%;
+    float:left;
+    padding:50px 2%;
+    .content{
+      i{
+        font-size:350%;
+        margin-top:40px;
+      }
+      font-size:200%;
+      background-color:#bbe;
 
+      border-width:4px;
+      border-color:#66a;
+      border-style:solid;
+    }
+  }
 }
 
-.clearBoth{
-  clear:both;
+#Footer{
+  height:60px;
+  width:100%;
+  background-color:$headerColor;
 }
+
+.clearBoth{ clear:both; }

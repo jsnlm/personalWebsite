@@ -1,6 +1,6 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\000031}}
 .fontSize1 {
-  font-size: 500%; }
+  font-size: 700%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\000034}}
 .fontSize2 {
@@ -17,55 +17,95 @@ body, html {
   padding: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000317}}
+.majorSection {
+  padding-top: 80px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000322}}
 .header {
   background-color: rgba(100, 100, 100, 0.85);
   color: #DDD;
   height: 70px;
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000329}}
   .header .items {
     vertical-align: middle;
     height: 100%;
-    width: 70px;
+    width: 95px;
     float: right;
     padding: 0 10px;
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000337}}
     .header .items .icon {
       font-size: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000340}}
+    .header .items.hover {
+      background-color: rgba(150, 150, 150, 0.85); }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000343}}
     .header .items .text {
       line-height: 30px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000349}}
 .content {
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000353}}
 .pictureSection {
   height: 700px;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000354}}
+  width: 100%;
+  color: 000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000362}}
   .pictureSection.pic1 {
     background-image: url("images/fjord-mountain-valley-river-tree-nature-1920x1080-wallpaper57568.jpg");
     background-position: center center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000368}}
   .pictureSection .content {
     position: relative;
     top: 50%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000376}}
 #projects {
   padding: 0 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000378}}
   #projects .project {
     height: 470px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003108}}
+#Experience .jobTitle {
+  font-size: 150%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003118}}
+#ContactMe {
+  margin: auto;
+  max-width: 700px;
+  padding-bottom: 150px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003122}}
+  #ContactMe .item {
+    width: 33%;
+    float: left;
+    padding: 50px 2%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003126}}
+    #ContactMe .item .content {
+      font-size: 200%;
+      background-color: #bbe;
+      border-width: 4px;
+      border-color: #66a;
+      border-style: solid; }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003127}}
+      #ContactMe .item .content i {
+        font-size: 350%;
+        margin-top: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003141}}
+#Footer {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.85); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003147}}
 .clearBoth {
   clear: both; }
 
