@@ -75,9 +75,6 @@ body, html {
 #projects {
   padding-left: 40px;
   padding-right: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000385}}
-  #projects .project {
-    height: 470px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003115}}
 #Experience .job {
