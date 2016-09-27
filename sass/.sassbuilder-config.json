@@ -1,5 +1,5 @@
 {
-    "project_path": ".",
+    "project_path": "../css",
 	"output_path": "../css",
 	"options": {
 		"cache":         true,

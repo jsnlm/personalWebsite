@@ -1,179 +1,280 @@
-.fontSize1{
-  font-size:700%;
-}
-.fontSize2{
-  font-size:300%;
-}
-.fontSize3{
-  font-size:200%;
-}
-
-body, html{
-  font-family:"Lato","Open Sans",sans-serif;
-  margin:0;
+body, html {
+  font-family: "Lato","Open Sans",sans-serif;
+  margin: 0;
   padding: 0;
 }
 
-.majorSection{
-  .title{
-    font-size:300%;
-    font-weight:700;
+// .fadeIn {
+// 	opacity:0;
+// }
+
+#topmenu {
+	position: absolute;
+	z-index: 1;
+}
+
+#topmenu>div {
+	a{
+		color: #000;
+		&:visited{color: #000}
+		&:hover{color: #000}
+		&:active{color: #000}
+		text-decoration: none;
+	}
+	float: left;
+	&.active{}
+	padding: 8px 15px;
+	&.activeAnimation{
+		// outline: 3px solid black;
+		background-color: rgba(0,0,0,0.2)
+	}
+}
+
+.section {
+	text-align: center;
+	font-size: 1.5em;
+	.title {
+		font-size: 3em;
+		font-weight: 300;
+	}
+	.items {
+		display: inline-block;
+		.contactItem {
+			i{
+				width: 45px;
+				text-align: center;
+			}
+			text-align: left;
+			padding: 10px 0px;
+		}
+	}
+	.job {
+		width: 60%;
+		margin: auto;
+		.companyLogo {
+			&.BDO{
+				height: 60px;
+			}
+		}
+		.title{
+			font-size: 1.5em;
+			font-weight: 300;
+		}
+		.bullet-points{
+			font-size: 0.75em;
+			font-weight: 300;
+		}
+	}
+	&#home{
+		background-position:center center;
+		background-image: url("images/background2.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		.main{
+			margin: auto;
+		}
+		text {
+		  font: 65px monospace;
+		  fill: #933;
+		}
+
+		// .enter {
+		//   fill: #B71C1C;
+		// }
+
+		// .update {
+		//   fill: #827717;
+		// }
+
+		// .exit {
+		//   fill: #1B5E20;
+		// }
+	}
+	&#experience{
+		background-color:#80D8FF;
+	}
+	&#projects{
+		background-color:rgb(186, 255, 186);
+	}
+}
+
+$timelineImageRadius: 25px;
+
+
+#timeline {
+  position: relative;
+  padding: 2em 0;
+  padding-left:2em;
+  margin: 2em 20.5%;
+  &::before{
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 70px;
+	  height: 100%;
+	  width: 4px;
+	  background: #d7e4ed;
   }
-  padding-top:80px;
-}
-
-$headerFontColor:#DDD;
-$headerColor: rgba(100,100,100,0.85);
-.header{
-  background-color: $headerColor;
-  height:70px;
-  position:fixed;
-  z-index:1;
-  width:100%;
-  color:$headerFontColor;
-  .items{
-    // position:absolute;
-    vertical-align:middle;
-    height:100%;
-    width:95px;
-    float:right;
-    padding:0 10px;
-    text-align:center;
-      color:$headerFontColor;
-    .icon{
-      font-size:30px;
-    }
-    &.hover{
-      background-color: rgba(150, 150, 150, 0.85);
-    }
-    .text{
-      line-height:30px;
-    }
+  .timeline-block{
+  	margin-bottom: 150px;
+		.timeline-dot {
+	  	width: 25px;
+	  	height: 25px;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			border-radius: 50px;
+			background-color: white;
+			position: absolute;
+			left: 60px;
+			margin-top: 10px;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				border-radius: 50px;
+	  		border: 4px solid #444;
+			}
+	  }
+	  .date {
+	    position: absolute;
+	    top: 0;
+	    left: -100px;
+	    font-size: 0.7em;
+	  }
+	  // .timeline-img {
+	  // 	display: inline-block;
+	  // 	position: relative;
+	  // 	z-index: 1;
+	  // 	background-color: white;
+	  // 	padding: 20px;
+	  // 	border-radius: $timelineImageRadius;
+	  // 	&::after {
+	  // 		content: '';
+	  // 		display: block;
+	  // 		position: absolute;
+	  // 		top: 0;
+	  // 		bottom: 0;
+	  // 		left: 0;
+	  // 		right: 0;
+	  // 		border-radius: $timelineImageRadius;
+	  // 		border: 8px solid #ccc;
+	  // 	}*/
+	  // 	.oracleIcon {
+	  // 		height:25px;
+	  // 	}
+	  // }
+	  $contentcolor: #FFF;
+	  .timeline-content {
+	  	position: relative;
+	  	background-color: $contentcolor;
+	  	border-radius: 10px;
+	  	margin-left: 50px;
+	  	padding: 30px;
+	  	box-shadow: 15px 15px 15px #888888;
+	  	.title {
+	  		font-size: 30px;
+	  	}
+	  	.date {
+	  		font-size: 15px;
+	  	}
+	  	&::before {
+			  content: '';
+			  position: absolute;
+			  top: 16px;
+			  right: 100%;
+			  height: 0;
+			  width: 0;
+			  border: 7px solid transparent;
+			  border-right: 7px solid $contentcolor;
+			}
+	  }
   }
 }
 
-.content{
-  text-align:center;
+
+#experience{
+	#oracle{
+		img{
+			height: 60px;
+		}
+	}
+	#IBM{
+		img{
+			height: 60px;
+		}
+	}
+	#BDO{
+		img{
+			height: 60px;
+		}
+	}
+	#TheRedPin{
+		img{
+			height: 60px;
+		}
+	}
+	.timeline-content{
+		.point{
+			text-align: left;
+			font-size: 16px;
+			font-weight:300;
+		}
+	}
 }
 
-.pictureSection{
-  height:700px;
-  background-repeat:no-repeat;
-  background-position:center center;
-  // background-attachment:fixed;
-  // background-size:contain;
-  // background-size:cover;
-  width:100%;
-  color:000;
-  &.pic1{
-    // background-image:url("images/Mountains-Wallpaper-Good-E8O2.jpg");
-    background-image:url("images/fjord-mountain-valley-river-tree-nature-1920x1080-wallpaper57568.jpg");
-    background-position:center center;
-    // background-size: 80px 60px;
-  }
-  .content{
-    position:relative;
-    top:25%;
-  }
+#projects {
+	.project {
+	  background-color: white;
+		// padding-left: 0;
+		// padding-right: 0;
+		// margin-left: 15px;
+		// margin-right: 15px;
+	 //  -webkit-border-radius: 50px;
+	 //  -moz-border-radius: 50px;
+	 //  border-radius: 50px;
+		.image {
+			height: 400px;
+			position: relative;
+			.name {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				color: white;
+				width: 100%;
+				line-height: 70px;
+				background-color: #444;
+				opacity: 0.8;
+			}
+		}
+		.description {
+			.point {
+				text-align: left;
+				font-size: 16px;
+				font-weight:300;
+			}
+		}
+	}
+		#powerDots .image {
+			background-image: url('images/12596408_10205940461771533_804017030_n2.jpg');
+		}
+		#quotimotivate .image {
+			background-image: url('images/quotimotivate.png');
+			background-size: cover;
+			background-position: center;
+		}
+		#histree .image {
+			background-image: url('images/historyGraph.png');
+		}
+		#pandaSportswear .image {
+			background-image: url('images/pandaSportswareWebsite.png');
+			background-size: cover;
+			background-position: center;
+		}
+		#fotag .image {
+			background-image: url('images/FotagMobile.png');
+			background-size: cover;
+		}
 }
-
-$projectWidth: 300px;
-
-#projects{
-  padding-left:40px;
-  padding-right:40px;
-  .project{
-    // height:470px;
-  // background-color:#AAF;
-
-
-  // margin:20px 20px;
-  // width: $projectWidth;
-  // float:left;
-
-  .squarePicture{
-    // width: $projectWidth;
-    // height: $projectWidth/2;
-    &.project1{
-      // background-image: url("images/12596408_10205940461771533_804017030_n.jpg");
-      // background-position:-150px -334px;
-    }
-    &.project2{
-      // background-image: url("images/pandaSportswareWebsiteScreenShot.png");
-      // background-size:$projectWidth;
-      // background-position-x:-150px;
-      // background-position-y:-150px;
-    }
-  }
-  .description{
-
-  }
-}
-}
-
-#Experience{
-  .job{
-    padding-right:20px;
-    padding-left:20px;
-    >div{
-      background-color:#bbb;
-      border-width:6px;
-      border-color:#DDD;
-      border-style:solid;
-    }
-    .jobTitle{
-      font-size:200%;
-      // height:72px;
-    }
-    .company{
-      font-size:120%;
-    }
-    .date{
-      font-size:70%;
-      font-weight:500;
-    }
-    .project{
-      font-weight:800;
-    }
-    .point{
-    }
-    ul{
-      text-align:left;
-    }
-    li{
-      padding-bottom:5px;
-      padding-top:5px;
-    }
-  }  
-}
-#ContactMe{
-  margin:auto;
-  max-width:700px;
-  padding-bottom:150px;
-  .item{
-    width:33%;
-    float:left;
-    padding:50px 2%;
-    .content{
-      i{
-        font-size:350%;
-        margin-top:40px;
-      }
-      color:#000; //This is to prevent color change from a tag. Without this it would be blue
-      font-size:200%;
-      background-color:#bbe;
-
-      border-width:4px;
-      border-color:#66a;
-      border-style:solid;
-    }
-  }
-}
-
-#Footer{
-  height:60px;
-  width:100%;
-  background-color:$headerColor;
-}
-
-.clearBoth{ clear:both; }

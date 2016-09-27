@@ -1,143 +1,218 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\000031}}
-.fontSize1 {
-  font-size: 700%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\000034}}
-.fontSize2 {
-  font-size: 300%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\000037}}
-.fontSize3 {
-  font-size: 200%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\000031}}
 body, html {
   font-family: "Lato","Open Sans",sans-serif;
   margin: 0;
   padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000317}}
-.majorSection {
-  padding-top: 80px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000318}}
-  .majorSection .title {
-    font-size: 300%;
-    font-weight: 700; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000311}}
+#topmenu {
+  position: absolute;
+  z-index: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000327}}
-.header {
-  background-color: rgba(100, 100, 100, 0.85);
-  height: 70px;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  color: #DDD; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000334}}
-  .header .items {
-    vertical-align: middle;
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000316}}
+#topmenu > div {
+  float: left;
+  padding: 8px 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000317}}
+  #topmenu > div a {
+    color: #000;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000319}}
+    #topmenu > div a:visited {
+      color: #000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000320}}
+    #topmenu > div a:hover {
+      color: #000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000321}}
+    #topmenu > div a:active {
+      color: #000; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000327}}
+  #topmenu > div.activeAnimation {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000333}}
+.section {
+  text-align: center;
+  font-size: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000336}}
+  .section .title {
+    font-size: 3em;
+    font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000340}}
+  .section .items {
+    display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000342}}
+    .section .items .contactItem {
+      text-align: left;
+      padding: 10px 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000343}}
+      .section .items .contactItem i {
+        width: 45px;
+        text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000351}}
+  .section .job {
+    width: 60%;
+    margin: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000355}}
+    .section .job .companyLogo.BDO {
+      height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000359}}
+    .section .job .title {
+      font-size: 1.5em;
+      font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000363}}
+    .section .job .bullet-points {
+      font-size: 0.75em;
+      font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000368}}
+  .section#home {
+    background-position: center center;
+    background-image: url("images/background2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000373}}
+    .section#home .main {
+      margin: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000376}}
+    .section#home text {
+      font: 65px monospace;
+      fill: #933; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000393}}
+  .section#experience {
+    background-color: #80D8FF; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\0000396}}
+  .section#projects {
+    background-color: #baffba; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003104}}
+#timeline {
+  position: relative;
+  padding: 2em 0;
+  padding-left: 2em;
+  margin: 2em 20.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003109}}
+  #timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 70px;
     height: 100%;
-    width: 95px;
-    float: right;
-    padding: 0 10px;
-    text-align: center;
-    color: #DDD; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000343}}
-    .header .items .icon {
-      font-size: 30px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000346}}
-    .header .items.hover {
-      background-color: rgba(150, 150, 150, 0.85); }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000349}}
-    .header .items .text {
-      line-height: 30px; }
+    width: 4px;
+    background: #d7e4ed; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003118}}
+  #timeline .timeline-block {
+    margin-bottom: 150px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003120}}
+    #timeline .timeline-block .timeline-dot {
+      width: 25px;
+      height: 25px;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      background-color: white;
+      position: absolute;
+      left: 60px;
+      margin-top: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003130}}
+      #timeline .timeline-block .timeline-dot::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 50px;
+        border: 4px solid #444; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003141}}
+    #timeline .timeline-block .date {
+      position: absolute;
+      top: 0;
+      left: -100px;
+      font-size: 0.7em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003170}}
+    #timeline .timeline-block .timeline-content {
+      position: relative;
+      background-color: #FFF;
+      border-radius: 10px;
+      margin-left: 50px;
+      padding: 30px;
+      box-shadow: 15px 15px 15px #888888; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003177}}
+      #timeline .timeline-block .timeline-content .title {
+        font-size: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003180}}
+      #timeline .timeline-block .timeline-content .date {
+        font-size: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003183}}
+      #timeline .timeline-block .timeline-content::before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 100%;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-right: 7px solid #FFF; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000355}}
-.content {
-  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003200}}
+#experience #oracle img {
+  height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003205}}
+#experience #IBM img {
+  height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003210}}
+#experience #BDO img {
+  height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003215}}
+#experience #TheRedPin img {
+  height: 60px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003220}}
+#experience .timeline-content .point {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000359}}
-.pictureSection {
-  height: 700px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  color: 000; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000368}}
-  .pictureSection.pic1 {
-    background-image: url("images/fjord-mountain-valley-river-tree-nature-1920x1080-wallpaper57568.jpg");
-    background-position: center center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000374}}
-  .pictureSection .content {
-    position: relative;
-    top: 25%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\0000382}}
-#projects {
-  padding-left: 40px;
-  padding-right: 40px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003115}}
-#Experience .job {
-  padding-right: 20px;
-  padding-left: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003118}}
-  #Experience .job > div {
-    background-color: #bbb;
-    border-width: 6px;
-    border-color: #DDD;
-    border-style: solid; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003124}}
-  #Experience .job .jobTitle {
-    font-size: 200%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003128}}
-  #Experience .job .company {
-    font-size: 120%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003131}}
-  #Experience .job .date {
-    font-size: 70%;
-    font-weight: 500; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003135}}
-  #Experience .job .project {
-    font-weight: 800; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003140}}
-  #Experience .job ul {
-    text-align: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003143}}
-  #Experience .job li {
-    padding-bottom: 5px;
-    padding-top: 5px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003149}}
-#ContactMe {
-  margin: auto;
-  max-width: 700px;
-  padding-bottom: 150px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003153}}
-  #ContactMe .item {
-    width: 33%;
-    float: left;
-    padding: 50px 2%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003157}}
-    #ContactMe .item .content {
-      color: #000;
-      font-size: 200%;
-      background-color: #bbe;
-      border-width: 4px;
-      border-color: #66a;
-      border-style: solid; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003158}}
-      #ContactMe .item .content i {
-        font-size: 350%;
-        margin-top: 40px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003173}}
-#Footer {
-  height: 60px;
-  width: 100%;
-  background-color: rgba(100, 100, 100, 0.85); }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Jason\/notWorkProgramming\/personalWebsite\/sass\/style\.scss}line{font-family:\00003179}}
-.clearBoth {
-  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003229}}
+#projects .project {
+  background-color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003238}}
+  #projects .project .image {
+    height: 400px;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003241}}
+    #projects .project .image .name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: white;
+      width: 100%;
+      line-height: 70px;
+      background-color: #444;
+      opacity: 0.8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003253}}
+  #projects .project .description .point {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003260}}
+#projects #powerDots .image {
+  background-image: url("images/12596408_10205940461771533_804017030_n2.jpg"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003263}}
+#projects #quotimotivate .image {
+  background-image: url("images/quotimotivate.png");
+  background-size: cover;
+  background-position: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003268}}
+#projects #histree .image {
+  background-image: url("images/historyGraph.png"); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003271}}
+#projects #pandaSportswear .image {
+  background-image: url("images/pandaSportswareWebsite.png");
+  background-size: cover;
+  background-position: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/personalWebsite\/sass\/style\.scss}line{font-family:\00003276}}
+#projects #fotag .image {
+  background-image: url("images/FotagMobile.png");
+  background-size: cover; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,163 +1,208 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
-<head>
-<title>Personal Website!</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,100italic,100,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="scripts/downloadedScripts/jquery.scrollTo-2.1.2/jquery.scrollTo.min.js"></script>
-<script src="scripts/script.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Personal Tutorial</title>
 
-	<div class="header">
-		<!-- <div class="items">github<img class="icon" src="css/images/github-512.png" alt=""></div> -->
-		<table style="width:100%">
-		  <tr>
-		    <a href="latestResume.pdf"><span class="items resume"><div class="text">R&eacute;sum&eacute;</div><i class="icon fa fa-file-text-o "></i></span></a>
-		    <span class="items contactMe"><div class="text">Contact Me</div><i class="icon fa fa-compress"></i></span>
-		    <span class="items experience"><div class="text">Experience</div><i class="icon fa fa-male"></i></span>
-		    <span class="items projects"><div class="text">Projects</div><i class="icon fa fa-cogs"></i></span>
-		  </tr>
-		</table>
-	</div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,200,200i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/remarkable@1.6.2/dist/remarkable.min.js"></script> -->
 
-	<!-- Took the picture from http://www.iwallpaperhd.co/mountains-wallpaper-good-e8o.html -->
-	<div class="pictureSection pic1" >
-		<div class="content">
-			<div class="fontSize1">Jason Lam</div>
-			<div class="fontSize3">Developer </br>Worked at IBM, BDO, TheRedPin</div>
-		</div>
-	</div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
 
-	<div id="projects" class="majorSection content">
-		<div class="title">Projects</div>
-		<div class="row">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="scripts/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 
-			<div class="project col-md-4 col-sm-4">
-				<div class="fontSize3	">Power Dots</div>
-				<!-- <div class="squarePicture project1"></div> -->
-				<img class="img1" src="css/images/12596408_10205940461771533_804017030_n2.jpg" width="100%">
-				<div class="description">An Android app with mesmerizing, touch-sensitive graphics. Graphics can be useradjusted
-for different effects and change the app's performance</div>
-				<a href="https://github.com/jsnlm/Dots-App">GitHub</a>
-			</div>
+  </head>
+  <body>
+    <div id="content"></div>
+    <!-- <script type="text/babel" src="scripts/script.js"></script> -->
+    <script type="text/babel">
+      // To get started with this tutorial running your own code, simply remove
+      // the script tag loading scripts/example.js and start writing code here.
+    </script>
 
-			<div class="project col-md-4 col-sm-4">
-				<div class="fontSize3">Panda Sportswear eCommerce</div>
-				<!-- <div class="squarePicture project2"></div> -->
-				<img class="img1" src="css/images/pandaSportswareWebsiteScreenShot2.png" width="100%">
-				<div class="description">A fully functional eCommerce site for Panda Sportswear; separates products into
-categories, and accepts various payment types. Handles "Cart", product data, sales,
-and coupons</div>
-				<a href="http://jasonjslam.com/devEcommerceSite/">Link</a>
-			</div>
+    <ul id="topmenu">
+        <div data-menuanchor="page1"><a href="#page1">Home</a></div>
+        <div data-menuanchor="page2"><a href="#page2">Experience</a></div>
+        <div data-menuanchor="page3"><a href="#page3">Projects</a></div>
+        <div data-menuanchor="page4"><a href="#page4">Contact Me</a></div>
+    </ul>
 
-			<div class="project col-md-4 col-sm-4">
-				<div class="fontSize3">History Graph</div>
-				<img class="img1" src="css/images/historyGraph.png" width="100%">
-				<div class="description">Displays the user's browser history in a graphical tree. Made in a team of 3 in a 24
-hour hackathon</div>
-				<a href="https://github.com/jsnlm/HistoryGraph">GitHub</a>
-				<a href="https://chrome.google.com/webstore/detail/history-graph/kknceihjckaijliogihaggomdjlaboim?hl=en">Link</a>
-			</div>
+    <div id="sections">
+      <div id="home" class="section">
+        <table class="main">
+          <tr>
+            <td><span class='title'>JASON LAM |</span></td>
+            <td><svg width="330" height="125"></svg></td>
+          </tr>
+        </table>
+        <!-- <div class='title'>Home</div> -->
+      </div>
 
-			<div class="clearfix"></div>
+      <div id="experience" class="section">
+        <div class='title'>Experience</div>
+        <section id="timeline" class='div'>
 
-			<div class="project col-md-4 col-sm-4">
-				<div class="fontSize3">Coop-Network.me </div>
-				<img class="img1" src="css/images/imgUnavailable.png" width="100%">
-				<div class="description">Displays the user's browser history in a graphical tree. Made in a team of 3 in a 24
-hour hackathon</div>
-				<a href="https://github.com/jsnlm/coop-network">GitHub</a>
-			</div>
-			<div class="clearBoth"></div>
-	</div>
+          <div id="oracle" class="timeline-block fadeIn">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <img src="css/images/oracleEloquaLogo.png" alt="Oracle Eloqua Logo">
+              <div class='title'>Back-End Developer</div>
+              <span class='date'>May-Aug<br>2016</span>
+              <ul>
+                <li class="point">Developed a widget to visualize the effectiveness of a marketing campaign in converting leads to accounts</li>
+                <li class="point">Investigated and resolved various data discrepancies in client databases</li>
+                <li class="point">Localized application to better market to foreign customers</li>
+                <li class="point">Increased test coverage by writing unit and integration tests for new features</li>
+              <ul>
+            </div>
+          </div>
 
-	</div>
+          <div id="IBM" class="timeline-block fadeIn">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <img src="css/images/IBMlogo.png" alt="IBM Logo">
+              <div class='title'>Compiler Optimization Developer</div>
+              <span class='date'>Sept-Dec<br>2015</span>
+              <div class="project">POWER Vector Intrinsic Library<span><a class="link" href="https://www.ibm.com/developerworks/community/groups/service/html/communitystart?communityUuid=96022c38-953f-48bd-9da5-e59a41028c7e">[Link]</a></span></div>
+              <ul >
+                <li class="point">Optimized library performance by leveraging the Intrinsic POWER functions</li>
+                <li class="point">Contributed 100+ function implementations to the library, increasing its adoption to many other projects</li>
+                <li class="point">Revamped the testing framework to significantly increase test coverage and automate its usage which helped uncover many existing bugs</li>
+              </ul>
+            </div>
+          </div>
 
-	<div id="Experience" class="majorSection content">
-		<div class="title">Experience</div>
-		<div class="col-md-4 col-sm-4 job">
-			<div class="">
-				<div class="jobTitle">.NET Developer</div>
-				<div class="company">BDO | <span class="date">Jan - Apr, 2015</span></div>
-				<div class="project">POWER Vector Intrinsic Library<span></span></div>
-				<ul>
-					<li class="point">Strengthened and simplified the testing process by refactoring the testing framework, and writing several scripts. This had the added benefit of catching many bugs in the library</li>
-					<li class="point">Boosted performance of dozens of functions using quicker and smarter algorithms</li>
-					<li class="point">Implemented 100+ translations for the Vector library Intel Intrinsic functions to POWER7 and POWER8</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-4 job">
-			<div class="">
-				<div class="jobTitle">Compiler Optimization Developer</div>
-				<div class="company">IBM Canada | <span class="date">Sept-Dec, 2015</span></div>
-				<div class="project">Bell Invoice Redesign Project</div>
-				<ul >
-					<li class="point">Owned <!--the front-end of -->Bell's new Bill Comparison page. Created a graphical app to display charges and also dynamically load additional data</li>
-					<li class="point">Contributed to Bell's UI framework and updated legacy UI components</li>
-					<li class="point">Helped re-implement Bell's main Billing page with much more information and functionality</li>
-				</ul>
-				<div class="project">Hudbay Minerals</div>
-				<ul >
-				<li class="point">Fixed UI and server-side bugs to perfect the product prior to release</li>
-				</ul>
-			</div>
-		</div>
+          <div id="BDO" class="timeline-block fadeIn">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <img src="css/images/BDOlogo.png" alt="BDO Logo">
+              <div class='title'>Front-End Developer</div>
+              <span class='date'>Jan-Apr<br>2015</span>
+              <div class="project">Bell Invoice Redesign Project</div>
+              <ul >
+                <li class="point">Implemented a graphical widget that displays a breakdown of a user's bill history</li>
+                <li class="point">Rewrote the existing billing page with much more comprehensive information to increase user's understanding of their bill</li>
+                <li class="point">Contributed to Bell's UI framework and updated legacy UI components</li>
+              </ul>
+            </div>
+          </div>
 
-		<div class="col-md-4 col-sm-4 job">
-			<div class="">
-				<div class="jobTitle">Developer Co-op</div>
-				<div class="company">TheRedPin | <span class="date">May - Aug, 2014</span></div>
-				<ul >
-					<li class="point">Contributed to the UI development of multiple SEM sites including:</li>
-						<a class="subPoint" href="http://www.Theredpinmortgage.ca">Theredpinmortgage.ca<a/>
-						</br>
-						<a class="subPoint" href="http://www.Red-pin.ca/mls-listings">Red-pin.ca/mls-listings</a>
-					<li class="point">Wrote multiple scripts to migrate internal data from Capsule CRM to Salesforce</li>
-					<li class="point">Created a database in Salesforce to manage assets of the company and send automated email notifications for returning assets</li>
-				</ul>
-			</div>
-		</div>
-		<div class="clearBoth"></div>
+          <div id="TheRedPin" class="timeline-block fadeIn">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <img src="css/images/TheRedPinLogo.png" alt="TheRedPin Logo">
+              <div class='title'>Developer Co-op</div>
+              <span class='date'>May-Aug<br>2014</span>
+              <div class="project">Bell Invoice Redesign Project</div>
+              <ul >
+                <li class="point">Developed multiple sites including:<a class="subPoint" href="http://www.Theredpinmortgage.ca">Theredpinmortgage.ca<a/><a class="subPoint" href="http://www.Red-pin.ca/mls-listings">Red-pin.ca/mls-listings</a></li>
+                <li class="point">Implemented an asset management system in Salesforce to keep track of company assets and send automated emails for their return</li>
+              </ul>
+            </div>
+          </div>
 
-	</div>
+        <section>
+      </div>
+      <div id="projects" class="section">
+        <div class='title'>Projects</div>
+        <div class='slide'>
 
-	<div id="ContactMe" class="majorSection content">
-		<div class="title">Contact Me</div>
+          <div id="powerDots" class="col-md-4 col-sm-4">
+            <div class="project">
+              <div class="image"><div class="name">Power Dots</div></div>
+              Android
+              <div class="description">
+                <ul>
+                  <li class="point">An app that displays mesmerizing, touch-sensitive graphics</li>
+                  <li class="point">Graphics can be user-adjusted for different effects and performance</li>
+                </ul>
+              </div>
+              <a href="https://github.com/jsnlm/Dots-App">GitHub</a>
+            </div>
+          </div>
 
-		<div class="item">
-    	<a href="http://www.github.com/jsnlm">
-				<div class="content">
-					<i class="icon fa fa-github "></i></br>Github
-				</div>
-			</a>
-		</div>
-    <div class="item">
-    	<!-- <a href="mailto:webmaster@example.com"> -->
-    	<a href="mailto:jasonjslam@gmail.com">
-    		<div class="content">
-    		<i class="icon fa fa-envelope-o "></i></br>Email
-    	</div>
-    	</a>
+          <div id="quotimotivate" class="col-md-4 col-sm-4">
+            <div class="project">
+              <div class="image"><div class="name">Quotimotivate</div></div>
+              Ruby-Rails-Angular-Ionic
+              <div class="description">
+                <ul>
+                  <li class="point">Get inspired to work by motivational speakers like Arnold Schwarzenegger, Shia LaBeouf and DJ Khaled</li>
+                  <li class="point">Developed to be a Web/Android/IOS friendly app that queries a Ruby+Rails API </li>
+                </ul>
+              </div>
+              <a href="http://quotimotivate.herokuapp.com/">quotimotivate.herokuapp.com</a>
+            </div>
+          </div>
+          
+          <div id="histree" class="col-md-4 col-sm-4">
+            <div class="project">
+              <div class="image"><div class="name">History Graph</div></div>
+              Chrome Extension-D3.js
+              <div class="description">
+                <ul>
+                  <li class="point">Displays the user's browser history in a graphical tree</li>
+                  <li class="point">Developed during an EngHack Hackathon</li>
+                </ul>
+              </div>
+              <a href="https://chrome.google.com/webstore/detail/history-graph/kknceihjckaijliogihaggomdjlaboim?hl=en">Web Store Link</a>
+            </div>
+          </div>
+
+        </div>
+        <div class='slide'>
+
+          <div id="pandaSportswear" class="col-md-4 col-sm-4">
+            <div class="project">
+              <div class="image"><div class="name">Panda Sportswear eCommerce</div></div>
+              Wordpress-Woocommerce
+              <div class="description">
+                <ul>
+                  <li class="point">A fully functional eCommerce site for Panda Sportswear</li>
+                  <li class="point">Can accept payments through PayPal, and credit card</li>
+                </ul>
+              </div>
+              <a href="http://jasonjslam.com/devEcommerceSite/">Link</a>
+            </div>
+          </div>
+          <div id="fotag" class="col-md-4 col-sm-4">
+            <div class="project">
+              <div class="image"><div class="name">Fotag</div></div>
+              Android
+              <div class="description">
+                <ul>
+                  <li class="point">A mobile app that can load, and rate photos</li>
+                  <li class="point">Can load images through the Bing Images API</li>
+                </ul>
+              </div>
+              <a href="https://github.com/jsnlm/Android_Photo_Viewer">Github</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="contactMe" class="section">
+        <div class='title'>Contact Me</div>
+        <div class="items">
+          <a href="http://www.github.com/jsnlm"><div class="contactItem"><i class="icon fa fa-github "></i>&nbsp;GITHUB</div></a>
+          <a href="mailto:jjslam@uwaterloo.ca"><div class="contactItem"><i class="icon fa fa-envelope-o "></i>&nbsp;EMAIL</div></a>
+          <a href="Resume.pdf"><div class="contactItem"><i class="icon fa fa-file-text-o "></i>&nbsp;RESUME</div></a>
+        <div>
+
+      </div>
     </div>
-    <div class="item">
-    	<a href="latestResume.pdf">
-	    	<div class="content">
-	    		<i class="icon fa fa-file-text-o "></i></br>R&eacute;sum&eacute;
-	    	</div>
-  		</a>
-    </div>
-    <div class="clearBoth"></div>
-	</div>
-
-
-	<div id="Footer" class="content"> &nbsp; </div>
-
-</body>
+  </body>
 </html>
