@@ -43,7 +43,7 @@ $(document).ready(function() {
 
   // alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   svg = d3.select("svg"),
-  width = +svg.attr("width"),height = +svg.attr("height"),
+  width = +($("svg").width()),height = +($("svg").height()),
   g = svg.append("g").attr("transform", "translate(32," + (height / 2) + ")");
 
 
